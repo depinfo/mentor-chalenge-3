@@ -1,60 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
+
   <title>Frontend Mentor | News homepage</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+
 </head>
+
 <body>
 
-  Home
-  New
-  Popular
-  Trending
-  Categories
+  <div class="container">
+    <nav class="navbar">
+      <div class="navbar__logo">
+        <img src="./assets/images/logo.svg" alt="Frontend Mentor logo">
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__item"><a href="#" class="navbar__link">Home</a></li>
+        <li class="navbar__item"><a href="#" class="navbar__link">New</a></li>
+        <li class="navbar__item"><a href="#" class="navbar__link">Popular</a></li>
+        <li class="navbar__item"><a href="#" class="navbar__link">Trending</a></li>
+        <li class="navbar__item"><a href="#" class="navbar__link">Categories</a></li>
+      </ul>
+    </nav>
 
-  The Bright Future of Web 3.0?
+    <div class="main-content">
+      <div class="first_block">
+        <div class="main_content_image">
+          <img src="./assets/images/image-web-3-desktop.jpg" alt="main contnet image">
+        </div>
+        <div class="under_image">
+          <div class="bright_future_title">
+            The Bright Future of </br>Web 3.0?
+          </div>
+          <div class="bright_future_description">
+            <div class="bright_future_content">
+              We dive into the next evolution of the web that claims to put the power of the platforms back into the hands
+              of
+              the people.
+              But is it really fulfilling its promise?
+            </div>
+            <button class="readmore">Read more</button>
+          </div>
+        </div>
+      </div>
+      <div class="second_block">
+        New
 
-  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-  But is it really fulfilling its promise?
+        Hydrogen VS Electric Cars
+        Will hydrogen-fueled cars ever catch up to EVs?
 
-  Read more
+        The Downsides of AI Artistry
+        What are the possible adverse effects of on-demand AI image generation?
 
-  New 
+        Is VC Funding Drying Up?
+        Private funding by VC firms is down 50% YOY. We take a look at what that means.
+      </div>
 
-  Hydrogen VS Electric Cars
-  Will hydrogen-fueled cars ever catch up to EVs?
 
-  The Downsides of AI Artistry
-  What are the possible adverse effects of on-demand AI image generation?
 
-  Is VC Funding Drying Up?
-  Private funding by VC firms is down 50% YOY. We take a look at what that means.
+    </div>
 
-  01
-  Reviving Retro PCs
-  What happens when old PCs are given modern upgrades?
+    <!-- 01
+    Reviving Retro PCs
+    What happens when old PCs are given modern upgrades?
 
-  02
-  Top 10 Laptops of 2022
-  Our best picks for various needs and budgets.
+    02
+    Top 10 Laptops of 2022
+    Our best picks for various needs and budgets.
 
-  03
-  The Growth of Gaming
-  How the pandemic has sparked fresh opportunities.
-  
+    03
+    The Growth of Gaming
+    How the pandemic has sparked fresh opportunities. -->
+  </div>
+
+
+
+  <!--   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
 </body>
+
 </html>
