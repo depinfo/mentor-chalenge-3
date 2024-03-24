@@ -9,27 +9,32 @@ body {
 
 .container {
     width: 80% !important;
-    margin:40px auto !important;
+    margin: 40px auto !important;
 }
 
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .navbar ul {
     display: flex;
-    list-style:none;
+    list-style: none;
     list-style-type: none;
 }
 
-.navbar ul li{
- padding: 18px;
+.navbar ul li {
+    padding: 18px;
 }
 
-.navbar ul li a{
+.navbar ul li a {
     text-decoration: none;
     color: hsl(43, 3%, 43%);
+}
+
+.navbar ul li a:hover {
+    color: hsl(5, 85%, 63%);
 }
 
 .main-content {
@@ -41,9 +46,8 @@ body {
     line-height: 1.5
 }
 
-.first_block  {
+.first_block {
     width: 69%;
-
 }
 
 .main_content_image img {
@@ -56,7 +60,9 @@ body {
 .second_block {
     width: 28%;
     background-color: hsl(240, 100%, 5%);
-    color : white;
+    color: white;
+    box-sizing: content-box;
+    overflow: hidden;
 }
 
 .bright_future_title {
@@ -90,9 +96,9 @@ body {
 
 
 
-button{
-    text-align: center; 
-    padding:15px 55px;
+button {
+    text-align: center;
+    padding: 15px 55px;
     background-color: hsl(5, 85%, 63%);
     color: aliceblue;
     font-size: bold;
@@ -100,23 +106,29 @@ button{
     position: absolute;
     left: 0;
     bottom: 0;
-    text-transform:uppercase;
+    text-transform: uppercase;
     cursor: pointer;
     letter-spacing: 2px;
     font-weight: 700;
 }
 
+button:hover {
+    background-color: hsl(241, 93%, 12%);
+
+}
+
 .new {
     font-size: 35px;
     font-weight: 800;
-    padding-top:40px;
+    padding-top: 40px;
     padding-left: 20px;
-    color :rgb(173, 173, 66)
+    color: rgb(173, 173, 66)
 }
 
 .new span {
     margin-top: 20px;
 }
+
 .para1 {
     font-size: 20px;
     font-weight: 400;
@@ -129,21 +141,110 @@ button{
 
 .ligne-sous-paragraphe {
     border: 0;
-    border-top: 1px solid rgb(146, 141, 141); 
-    margin-top: 15px; 
+    border-top: 1px solid rgb(146, 141, 141);
+    margin-top: 15px;
     margin-right: 20px;
     margin-left: 8px;
 }
 
 .text_under {
-color : rgb(164, 160, 160);
-font-size: 15px;
-font-weight: 100;
+    color: rgb(164, 160, 160);
+    font-size: 15px;
+    font-weight: 100;
 }
 
 .section-content {
     width: 100%;
-    margin-top: 50px;
-    display: flex;
-    justify-content: space-between;
+    margin-top: 65px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* justify-content: space-between; */
 }
+
+.section-content img {
+    width: 100px;
+    height: 120px;
+}
+
+.element {
+    display: flex;
+}
+
+.info {
+    padding-left: 20px;
+}
+
+.nombre {
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(163, 161, 161);
+}
+
+.text_card {
+    color: rgb(81, 78, 78);
+    font-size: 15px;
+    font-weight: 100;
+    padding-top: 10px;
+    line-height: 25px;
+}
+
+.title_info {
+    cursor: pointer;
+    font-weight: 800;
+    padding-top: 30px;
+}
+
+.title_info:hover {
+    color: hsl(5, 85%, 63%);
+}
+
+
+
+/* Add styles for the sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Initially hide the sidebar */
+    width: 250px; /* Adjust as needed */
+    height: 100%;
+    background-color: #fff;
+    z-index: 1000;
+    transition: right 0.3s ease-in-out;
+  }
+  
+  .sidebar.open {
+    right: 0; /* Show sidebar */
+  }
+  
+  .close-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+  
+  /* Media query for mobile */
+  @media only screen and (max-width: 768px) {
+    .navbar__menu {
+      display: none; /* Hide the original menu */
+    }
+  
+    /* Show the sidebar menu icon */
+    .menu-icon {
+      display: block;
+    }
+  }
+  
+  /* Styles for the menu icon */
+  .menu-icon {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .menu-icon span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: #333;
+  }
