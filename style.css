@@ -91,7 +91,7 @@ body {
 
 
 button{
-    text-align: center;
+    text-align: center; 
     padding:15px 55px;
     background-color: hsl(5, 85%, 63%);
     color: aliceblue;
@@ -106,3 +106,44 @@ button{
     font-weight: 700;
 }
 
+.new {
+    font-size: 35px;
+    font-weight: 800;
+    padding-top:40px;
+    padding-left: 20px;
+    color :rgb(173, 173, 66)
+}
+
+.new span {
+    margin-top: 20px;
+}
+.para1 {
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 1.5;
+    /* color: hsl(43, 3%, 43%); */
+}
+
+.ligne-sous-paragraphe {
+    border: 0;
+    border-top: 1px solid rgb(146, 141, 141); 
+    margin-top: 15px; 
+    margin-right: 20px;
+    margin-left: 8px;
+}
+
+.text_under {
+color : rgb(164, 160, 160);
+font-size: 15px;
+font-weight: 100;
+}
+
+.section-content {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
